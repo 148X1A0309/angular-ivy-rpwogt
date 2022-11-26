@@ -59,16 +59,21 @@ export class TasksComponent implements OnInit {
     },
     {
         'id':5,
-        'state':'Bhopal',
+        'district':'Bhopal',
         's_id':'5'
     }
   
   ]
-  
+filteredDistricts=this.districts
   constructor() { }
 
   ngOnInit() {
   }
-
+  updateDistrict(e){
+let SId= e.target.value
+this.filteredDistricts=this.districts.filter((d)=>{
+d.s_id==SId
+})
+  }
 
 }
