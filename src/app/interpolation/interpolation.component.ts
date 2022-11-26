@@ -12,6 +12,7 @@ export class InterpolationComponent implements OnInit {
   isdisabled: boolean = true;
   cvar:string='blue';
   name2:any;
+  city='Banglore'
   //To LocalDateString returns the month/date/year
   //To LocalTimeString will gives you the current Time locally
   constructor() {}
@@ -24,8 +25,7 @@ export class InterpolationComponent implements OnInit {
   changeName(e){
     this.name2=e.target.value
   }
-  city="Banglore"
-
+  
   Update(){
   this.city="Hyderabad" ;
   }

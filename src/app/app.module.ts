@@ -9,7 +9,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ,TasksComponent],
+  declarations: [ AppComponent, HelloComponent ,InterpolationComponent,TasksComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
