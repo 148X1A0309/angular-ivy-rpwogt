@@ -7,3 +7,24 @@
 <input type="text" [hidden]="ishidden">
 
 <button type="submit" [disabled]="isdisabled">Submit</button>
+
+<!-- Style Binding -->
+
+<!-- <h1 [style]='{color:cvar}'>This is me </h1> -->
+<h1 [style.color]='cvar'>This is me</h1>
+
+<!-- Event Binding -->
+
+<!-- It is specifically used when an event occurs  -->
+
+<input type='text' (input)="changeName($event)">
+
+<h1>Your name:{{name2}}</h1>
+
+<!-- Two way Data Binding -->
+
+City:<input type="text" [(ngModel)]="city">
+
+<h3>{{city}}</h3>
+
+<button (click)="Update()"></button>
