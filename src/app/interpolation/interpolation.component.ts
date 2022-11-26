@@ -25,8 +25,9 @@ export class InterpolationComponent implements OnInit {
     this.name2=e.target.value
   }
   city="Banglore"
+
   Update(){
-  this.city="Hyderabad" 
+  this.city="Hyderabad" ;
   }
 
 }
