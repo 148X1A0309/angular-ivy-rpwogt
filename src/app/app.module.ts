@@ -7,7 +7,7 @@ import { HelloComponent } from './hello.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { PopUpComponent } from './pop-up/pop-up.component';
-import { FormsComponent } from '../forms/forms.component';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,ReactiveFormsModule ],
