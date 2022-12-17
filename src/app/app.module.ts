@@ -8,10 +8,13 @@ import { TasksComponent } from './tasks/tasks.component';
 import { InterpolationComponent } from './interpolation/interpolation.component';
 import { PopUpComponent } from './pop-up/pop-up.component';
 import { FormsComponent } from './forms/forms.component';
+import { TodoComponent } from './todo/todo.component';
+
+
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule,ReactiveFormsModule ],
-  declarations: [ AppComponent, HelloComponent ,InterpolationComponent,TasksComponent, PopUpComponent,FormsComponent],
+  declarations: [ AppComponent, HelloComponent ,InterpolationComponent,TasksComponent, PopUpComponent,FormsComponent,TodoComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
