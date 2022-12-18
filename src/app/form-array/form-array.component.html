@@ -1,0 +1,10 @@
+<form action=""[formGroup]="login">
+<div formArrayName="Logindata">
+  <div *ngFor="let m of login.get('Logindata')['controls']" let i as index>
+  MobileNum:{{i+1}}<input type="text" class="form-control" formControlName="mobileName">
+  <button click="delete(i)">Delete</button>
+  </div>
+</div>
+</form>
+
+<button click="Add()">Add</button>
